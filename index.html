@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #f4f4f4 0%, #e6f0fa 100%);
+            min-height: 100vh;
+        }
+        header {
+            background: #222 url('https://www.transparenttextures.com/patterns/diamond-upholstery.png');
+            color: #fff;
+            padding: 32px 0 18px 0;
+            text-align: center;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        nav ul li {
+            margin: 0 18px;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            letter-spacing: 1px;
+            transition: color 0.2s;
+        }
+        nav ul li a:hover {
+            color: #b0e0e6;
+        }
+        .hero {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(90deg, #b0e0e6 0%, #f4f4f4 100%);
+            padding: 70px 20px 50px 20px;
+            text-align: center;
+            box-shadow: 0 2px 12px rgba(176,224,230,0.08);
+        }
+        .about, .skills, .education, .certifications, .projects, .experience, .contact {
+            padding: 40px 20px;
+            max-width: 900px;
+            margin: 40px auto 24px auto;
+            background: rgba(255,255,255,0.92);
+            border-radius: 18px;
+            box-shadow: 0 2px 12px rgba(176,224,230,0.10);
+        }
+        .about {
+            background: rgba(240,248,255,0.95);
+        }
+        h2 {
+            color: #1a4d6b;
+            margin-bottom: 12px;
+        }
+        h3 {
+            color: #2a7fa4;
+            margin-bottom: 8px;
+        }
+        .skills-list, .projects-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            justify-content: center;
+        }
+        .skill, .project {
+            background: #e0e0e0;
+            padding: 10px 20px;
+            border-radius: 20px;
+        }
+        ul {
+            padding-left: 18px;
+        }
+        .contact a {
+            color: #1a4d6b;
+            text-decoration: underline;
+        }
+        .contact a:hover {
+            color: #2a7fa4;
+        }
+        @media (max-width: 700px) {
+            .about, .skills, .education, .certifications, .projects, .experience, .contact {
+                padding: 24px 6vw;
+            }
+            nav ul li {
+                margin: 0 8px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div style="display: flex; flex-direction: column; align-items: center; gap: 8px;">
+            <h1 style="font-size: 2.5rem; margin: 0; letter-spacing: 2px;">Caden Ringwood</h1>
+            <div style="font-size: 1.2rem; color: #b0e0e6; font-weight: 500;">Aspiring Data Scientist | Python Developer | Computer Science Student</div>
+            <div style="color: #ccc; font-size: 1rem; margin-top: 2px;">
+                📍 St. George, UT &nbsp;|&nbsp; 📧 <a href="mailto:cbringwood03@gmail.com" style="color: #b0e0e6; text-decoration: underline;">cbringwood03@gmail.com</a>
+            </div>
+            <div style="margin-top: 4px;">
+                <a href="#" style="color: #b0e0e6; margin: 0 10px; text-decoration: underline;">LinkedIn</a>
+                <a href="#" style="color: #b0e0e6; margin: 0 10px; text-decoration: underline;">GitHub</a>
+            </div>
+        </div>
+        <nav style="margin-top: 18px;">
+            <ul>
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="hero" id="hero" style="display: flex; flex-direction: column; align-items: center; justify-content: center; background: linear-gradient(90deg, #b0e0e6 0%, #f4f4f4 100%); padding: 70px 20px 50px 20px; text-align: center; box-shadow: 0 2px 12px rgba(176,224,230,0.08);">
+        <h2 style="font-size: 2rem; color: #222; margin-bottom: 18px;">Welcome!</h2>
+        <p style="font-size: 1.2rem; max-width: 600px; margin: 0 auto;">Creative and driven Computer Science student with a strong foundation in Python and application development. Microsoft Certified in Python Programming and actively completing the TripleTen Data Science Bootcamp. Experienced in building full applications from scratch and solving real-world problems through programming, data analysis, and teamwork. Eager to apply technical and practical skills in a data science or software development role.</p>
+    </section>
+    <section class="about" id="about">
+        <h2>About Me</h2>
+        <p>Hi, I'm Caden! I'm a passionate Computer Science student at Utah Tech University, specializing in Python development and data science. I love building applications from scratch, analyzing data, and collaborating with others to solve challenging problems. My journey includes earning a Microsoft Certification in Python, completing the TripleTen Data Science Bootcamp, and developing both games and productivity tools. I thrive in team environments and am always eager to learn and grow.</p>
+    </section>
+    <section class="skills" id="skills">
+        <h2>Skills</h2>
+        <div style="display: flex; flex-wrap: wrap; gap: 20px; justify-content: center;">
+            <div style="min-width: 220px;">
+                <h3>Languages & Tools</h3>
+                <ul style="list-style: disc inside;">
+                    <li>Python, SQL, Git</li>
+                    <li>Pandas, NumPy, Scikit-learn</li>
+                    <li>Matplotlib, Seaborn</li>
+                    <li>Jupyter Notebook, VS Code</li>
+                </ul>
+            </div>
+            <div style="min-width: 220px;">
+                <h3>Concepts</h3>
+                <ul style="list-style: disc inside;">
+                    <li>Data cleaning, visualization</li>
+                    <li>Hypothesis testing</li>
+                    <li>Supervised/unsupervised learning</li>
+                    <li>Regression, classification</li>
+                </ul>
+            </div>
+            <div style="min-width: 220px;">
+                <h3>Additional Skills</h3>
+                <ul style="list-style: disc inside;">
+                    <li>GUI programming (Tkinter)</li>
+                    <li>Object-oriented programming</li>
+                    <li>Game development, GitHub</li>
+                </ul>
+            </div>
+            <div style="min-width: 220px;">
+                <h3>Soft Skills</h3>
+                <ul style="list-style: disc inside;">
+                    <li>Communication, time management</li>
+                    <li>Problem-solving, adaptability</li>
+                    <li>Team collaboration</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section class="education" id="education" style="padding: 40px 20px; max-width: 800px; margin: 0 auto;">
+        <h2>Education</h2>
+        <div style="margin-bottom: 18px;">
+            <strong>Utah Tech University</strong> — Bachelor of Science in Computer Science<br>
+            <span>Expected Graduation: <em>[Insert Month & Year]</em></span><br>
+            <span>Relevant Courses: Data Structures, Algorithms, Software Development, Linear Algebra, Statistics</span>
+        </div>
+        <div>
+            <strong>TripleTen Bootcamp</strong> — Certificate in Data Science<br>
+            <span>Expected Completion: <em>[Insert Month & Year]</em></span><br>
+            <span>Focus: Machine Learning, SQL, Data Analysis, Business Insight, Python for Data Science</span>
+        </div>
+    </section>
+    <section class="certifications" id="certifications" style="padding: 40px 20px; max-width: 800px; margin: 0 auto;">
+        <h2>Certifications</h2>
+        <ul style="list-style: disc inside;">
+            <li>Microsoft Certified: Python Programming</li>
+        </ul>
+    </section>
+    <section class="projects" id="projects" style="padding: 40px 20px; max-width: 800px; margin: 0 auto;">
+        <h2>Projects</h2>
+        <div style="margin-bottom: 18px;">
+            <strong>Microsoft Paint Clone (Python, Tkinter)</strong><br>
+            <span>Built a GUI paint application from scratch with full brush tools, color palette, and save functionality.</span>
+        </div>
+        <div style="margin-bottom: 18px;">
+            <strong>2D Video Games (Python, Pygame)</strong><br>
+            <span>Designed and programmed several original games with sprite animations, input controls, and gameplay mechanics.</span>
+        </div>
+        <div>
+            <strong>Data Science Capstone (TripleTen)</strong><br>
+            <span>Analyzed real-world datasets and created machine learning models using Scikit-learn. Visualized insights with Matplotlib and Seaborn and presented results clearly and effectively.</span>
+        </div>
+    </section>
+    <section class="experience" id="experience" style="padding: 40px 20px; max-width: 800px; margin: 0 auto;">
+        <h2>Experience</h2>
+        <div style="margin-bottom: 18px;">
+            <strong>Peer Mentor & Student Developer</strong><br>
+            <span>Utah Tech University | 2024 – Present</span><br>
+            <ul style="list-style: disc inside;">
+                <li>Supported classmates with Python, data science projects, and GitHub version control</li>
+                <li>Helped troubleshoot code and encouraged collaborative problem-solving</li>
+            </ul>
+        </div>
+        <div style="margin-bottom: 18px;">
+            <strong>Construction Laborer</strong><br>
+            <span>FR Customs | 2018 – 2023</span><br>
+            <ul style="list-style: disc inside;">
+                <li>Interpreted blueprints and executed precise building tasks in a high-stakes environment</li>
+                <li>Developed strong problem-solving, teamwork, and time management skills</li>
+                <li>Maintained safety, adaptability, and performance under pressure</li>
+            </ul>
+        </div>
+        <div>
+            <strong>Restaurant Host</strong><br>
+            <span>Bear Paw Café, St. George, UT | 2021 – 2022</span><br>
+            <ul style="list-style: disc inside;">
+                <li>Greeted and seated guests during high-traffic hours while managing long waitlists</li>
+                <li>Communicated effectively with customers and kitchen staff to improve guest experience</li>
+                <li>Built interpersonal and decision-making skills in a fast-paced environment</li>
+            </ul>
+        </div>
+    </section>
+    <section class="contact" id="contact">
+        <h2 style="text-align: center;">Let’s Connect</h2>
+        <div style="font-size: 1.1rem; display: flex; flex-direction: column; align-items: center; gap: 16px; justify-content: center;">
+            <div style="display: flex; align-items: center; gap: 8px;">
+                <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/gmail.svg" alt="Gmail" style="width: 24px; height: 24px; vertical-align: middle; filter: grayscale(1);">
+                <a href="mailto:cbringwood03@gmail.com" style="color: #1a4d6b; font-weight: 500; text-decoration: underline;">cbringwood03@gmail.com</a>
+            </div>
+            <div style="display: flex; gap: 24px; justify-content: center;">
+                <a href="https://www.linkedin.com/in/caden-brian-ringwood-8577a4347" target="_blank" rel="noopener" style="display: flex; align-items: center; color: #1a4d6b; text-decoration: none; font-weight: 500; gap: 6px;">
+                    <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/linkedin.svg" alt="LinkedIn" style="width: 24px; height: 24px; vertical-align: middle; filter: grayscale(1);">
+                    LinkedIn
+                </a>
+                <a href="https://github.com/caden-ringwood" target="_blank" rel="noopener" style="display: flex; align-items: center; color: #1a4d6b; text-decoration: none; font-weight: 500; gap: 6px;">
+                    <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/github.svg" alt="GitHub" style="width: 24px; height: 24px; vertical-align: middle; filter: grayscale(1);">
+                    GitHub
+                </a>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
